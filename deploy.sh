@@ -3,7 +3,7 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 MOD_NAME="TheLegendarySword"
-MODS_DIR="$HOME/.local/share/Steam/steamapps/common/Wildfrost/Modded/Wildfrost_Data/StreamingAssets/Mods/$MOD_NAME"
+MODS_DIR="/steam-library/steamapps/common/Wildfrost/Modded/Wildfrost_Data/StreamingAssets/Mods/$MOD_NAME"
 
 cd "$SCRIPT_DIR"
 

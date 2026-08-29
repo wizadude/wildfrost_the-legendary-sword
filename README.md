@@ -55,3 +55,15 @@ needed.
 
 - .NET SDK (targets `net472`)
 - A local Wildfrost install with the Modded (Mono) build present
+
+## How to publish on Linux
+
+You can only publish if you are running the game from the user that owns the licence. Family shared accounts cannot publish.
+A bug in how path is treated expects the mod to be located in \ directories.
+For this reason the Steam workshop button never renders.
+The game has a console command that calls the exact same code the button would (Console+PublishMod → WildfrostMod.UpdateOrPublishWorkshop()), bypassing the button entirely:
+
+1. In game, open the console with ` (backquote) or F12.
+2. Run:
+publish logan.wildfrost.thelegendarysword <tag>
+3. Look for Upload result ... in the log.
